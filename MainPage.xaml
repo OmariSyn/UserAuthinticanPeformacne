@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerformanceApp.MainPage">
+    <StackLayout Padding="20" Spacing="15">
+        <!-- Display Name -->
+        <Label Text="Omari Johnson" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
+
+        <!-- Display Assessment Title -->
+        <Label Text="Wk 4 Performance Assessment" 
+               FontSize="18" 
+               HorizontalOptions="Center" />
+
+        <!-- User Name Entry -->
+        <Label Text="User Name" 
+               FontSize="14" />
+        <Entry x:Name="UserIdEntry" Placeholder="Enter your username" />
+
+        <!-- Password Entry -->
+        <Label Text="Password" 
+               FontSize="14" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter your password" 
+               IsPassword="True" />
+
+        <!-- Buttons -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Button Text="Login" Clicked="OnLoginClicked" />
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
